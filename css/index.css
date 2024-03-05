@@ -1,0 +1,355 @@
+@import url("https://fonts.googleapis.com/css2?family=Protest+Revolution&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter&family=Protest+Revolution&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Single+Day&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #086972 !important;
+  font-family: "Inter";
+  overflow-x: hidden;
+  color: white !important;
+}
+
+h3 {
+  color: #303a52;
+  text-align: center;
+  letter-spacing: 2px;
+  margin: 0 auto;
+}
+
+.parent {
+  max-width: 90vw;
+  width: 1300px;
+  margin: 0 auto;
+  margin-top: 150px !important;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  padding: 10px 100px 5px 100px;
+}
+
+header .logo {
+  font-size: 25px;
+  font-family: "Protest Revolution";
+}
+
+header .mid {
+  position: relative;
+}
+
+header .mid ul {
+  display: flex;
+  list-style-type: none;
+  margin-bottom: 0px !important;
+}
+
+header .mid ul li {
+  font-size: 20px;
+  cursor: pointer;
+  padding: 0 10px;
+  margin: 0 10px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+  display: inline-block;
+}
+
+header .btn button,
+button,
+.text button {
+  padding: 8px 15px;
+  border: none;
+  font-size: 16px;
+  border-radius: 15px;
+  background-color: #a7ff83 !important;
+  color: blue;
+  cursor: pointer;
+}
+
+button:hover {
+  box-shadow: 3px 3px 5px #a7ff83;
+}
+
+.bot {
+  position: absolute;
+  height: 3px;
+  background-color: orangered;
+  transition: all 0.1s ease-in-out;
+}
+
+.humberger {
+  display: none;
+  cursor: pointer;
+}
+
+.humberger div {
+  width: 35px;
+  height: 2px;
+  background-color: white !important;
+}
+
+.humberger .mid {
+  margin: 6px 0;
+}
+
+.res-hum {
+  background-color: #086972;
+  position: fixed;
+  width: 100%;
+  top: 0px;
+  text-align: center;
+  font-size: 20px;
+  padding: 0;
+  height: 0;
+  transition: all 0.2s ease;
+  overflow: hidden;
+}
+
+.res-hum #about {
+  margin: 30px 0;
+}
+
+.res-hum button {
+  border-radius: 10px;
+  padding: 5 10px;
+}
+
+.res-hum button:hover {
+  box-shadow: 3px 3px 5px #086972;
+}
+
+.show-hum {
+  padding: 70px;
+  overflow: auto;
+  height: auto;
+}
+
+.humberger div:last-child {
+  width: 20px;
+  animation: all 5s ease-in-out;
+}
+
+.show.three {
+  display: none;
+}
+
+.show.one {
+  transform: rotate(45deg);
+  margin-top: 10px;
+}
+
+.show.two {
+  transform: rotate(135deg);
+  margin-bottom: 10px;
+}
+
+.ok.humberger div {
+  background-color: white;
+}
+
+@media only screen and (max-width: 1200px) {
+  .img-container .tow-img {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 992px) {
+  header {
+    padding: 20px 50px;
+  }
+
+  .img-container {
+    display: none;
+  }
+
+  .offer {
+    margin-top: 50px;
+  }
+
+  .album img {
+    width: 400px;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  .pare .page {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  .middle_tech {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  .album {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  header .logo {
+    font-size: 20px;
+  }
+
+  header .mid ul li {
+    font-size: 17px;
+  }
+
+  .album_text {
+    font-size: 17px;
+  }
+
+  .offer {
+    font-size: 30px;
+  }
+
+  .footer {
+    font-size: 16px;
+  }
+
+  .footer span {
+    font-size: 18px;
+  }
+
+  .footer-album {
+    font-size: 16px;
+  }
+
+  .footer-album span {
+    font-size: 18px;
+  }
+
+  .footer-about {
+    text-align: center;
+    color: white;
+    margin-top: 100px;
+    margin-bottom: 20px;
+    font-size: 16px;
+  }
+
+  .footer-about span {
+    color: #22d1ee;
+    font-size: 20px;
+    font-family: "Single Day";
+  }
+
+  .footer-album {
+    text-align: center;
+    width: 100%;
+    color: #fdfdfd;
+    margin-top: 100px;
+    margin-bottom: 20px;
+    font-size: 15px;
+  }
+
+  .footer-album span {
+    color: #22d1ee;
+    font-size: 20px;
+    font-family: "Single Day";
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  .parent {
+    margin-top: 100px !important;
+  }
+
+  header .mid ul,
+  .btn,
+  header .btn button {
+    display: none;
+  }
+
+  .humberger {
+    display: block;
+  }
+
+  .humberger div {
+    background-color: black;
+  }
+
+  header {
+    padding: 20px 20px;
+  }
+
+  .image {
+    width: 120px;
+    height: 120px;
+  }
+
+  .pare h1 {
+    font-size: 30px;
+  }
+
+  .pare .page .about-page {
+    width: 100%;
+  }
+
+  .play-text {
+    margin: 50px 0;
+  }
+
+  .footer-album {
+    margin-top: 100px;
+  }
+
+  .middle-text h1 {
+    font-size: 30px;
+  }
+
+  .album .album_text {
+    font-size: 20px;
+  }
+}
+
+/*# sourceMappingURL=index.css.map */
+
+/* preloader */
+
+#preloader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 9999;
+  overflow: hidden;
+  background-color: #085f63;
+}
+
+#preloader:before {
+  content: "";
+  position: fixed;
+  top: calc(50% - 30px);
+  left: calc(50% - 30px);
+  border: 6px solid orangered;
+  border-top-color: #fff;
+  border-bottom-color: #fff;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  animation: animate-preloader 1s linear infinite;
+}
+
+@keyframes animate-preloader {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}

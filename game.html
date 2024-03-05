@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hangman</title>
+    <style>
+    </style>
+</head>
+
+<body class="">
+    <div class="row w-100 mt-5 pt-5" style="margin: 0 auto;">
+        <div class="col-sm-6 col-12 mb-5" style="margin: 0 auto;">
+            <svg height="250" width="200" class="figure-container" style="margin: 0 auto;">
+                <!-- Rod -->
+                <line x1="60" y1="20" x2="140" y2="20" />
+                <line x1="140" y1="20" x2="140" y2="50" />
+                <line x1="60" y1="20" x2="60" y2="230" />
+                <line x1="20" y1="230" x2="100" y2="230" />
+
+                <!-- Head -->
+                <circle cx="140" cy="70" r="20" class="figure-part" />
+                <!-- Body -->
+                <line x1="140" y1="90" x2="140" y2="150" class="figure-part" />
+                <!-- Arms -->
+                <line x1="140" y1="120" x2="120" y2="100" class="figure-part" />
+                <line x1="140" y1="120" x2="160" y2="100" class="figure-part" />
+                <!-- Legs -->
+                <line x1="140" y1="150" x2="120" y2="180" class="figure-part" />
+                <line x1="140" y1="150" x2="160" y2="180" class="figure-part" />
+            </svg>
+        </div>
+        <div class="col-sm-6 col-12" id="trueletter"></div>
+        <div class="col-sm-6 mt-5 text-center text-white fs-3 col-12" style="margin: 0 auto;">
+            <div class="w-100" id="wrong" style="color: #17b978 !important;">Wrong letters</div>
+            <div class="w-100" id="wrongletter"></div>
+        </div>
+    </div>
+    <p class="noti" style="z-index: 10;">You have already enter this letter.</p>
+    <div class="abs-div"></div>
+    <div class="showlost">
+        <p class="lostwintext">
+        </p>
+        <div class="text-white px-3 py-2 mt-3 d-flex justify-content-center" id="playagain"
+            style="background-color: #17b978; cursor: pointer;">
+            Play Again
+        </div>
+    </div>
+    <div class="footer" style="position: absolute; bottom: 0px; left: 50%; transform: translateX(-50%);">
+        Design and developed by <span>Thae Lin Oo</span>
+    </div>
+
+    <script src="./game.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,138 @@
+.head {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  z-index: 10;
+}
+
+.head_bg {
+  background-color: #086972;
+  border-bottom: 1px solid rgb(155, 151, 151);
+}
+
+.middle-text {
+  display: flex;
+  letter-spacing: 2px;
+  justify-content: space-between;
+  flex-direction: row;
+  margin: 0 auto;
+  margin-bottom: 70px;
+  margin-top: 50px;
+}
+
+.text {
+  width: 700px;
+  align-self: center;
+  max-width: 100%;
+}
+
+.middle-text span {
+  font-size: 22px !important;
+  opacity: 0.7;
+  font-size: 17px;
+}
+
+.middle-text h1 {
+  margin: 20px 0;
+  font-size: 40px;
+  text-align: start !important;
+}
+
+.chef {
+  font-size: 20px;
+  color: orangered;
+}
+
+.img-container {
+  width: 500px;
+  max-width: 90%;
+}
+
+.img-container img {
+  border-radius: 5%;
+  height: 100%;
+  object-fit: cover;
+  width: 100%;
+}
+
+.offer {
+  text-align: center;
+  letter-spacing: 4px;
+  font-size: 40px;
+  margin-bottom: 50px;
+}
+
+.offer_parent {
+  width: 100%;
+  margin: 0 auto;
+  font-size: 20px;
+}
+
+.album {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  margin: 0 auto;
+}
+.album img {
+  width: 500px;
+  max-width: 100%;
+  height: 300px;
+  -o-object-fit: cover;
+  object-fit: cover;
+  border-radius: 10px;
+  border: 3px solid #e2f3f5;
+}
+.album .album_text {
+  margin: 0 auto;
+  width: 600px;
+  max-width: 100%;
+  line-height: 30px;
+  vertical-align: middle;
+  align-self: center;
+  font-size: 25px;
+  letter-spacing: 2px;
+  opacity: 0.9;
+}
+.album .album_text p {
+  width: 100%;
+}
+.album img {
+  margin: 50px auto;
+}
+
+h3:nth-of-type(2) {
+  margin-top: 50px;
+}
+
+.footer {
+  text-align: center;
+  margin-top: 100px;
+  margin-bottom: 20px;
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+.footer span {
+  color: orangered;
+  font-size: 22px;
+  font-family: "Single Day";
+} /*# sourceMappingURL=home.css.map */
+
+.alb,
+.fav {
+  width: 130px;
+  height: 2px;
+  background-color: blue;
+  margin: 0 auto;
+  margin-top: 1px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.inn {
+  width: 50px;
+  margin: 0 auto;
+  background-color: #17b978;
+  height: 3px;
+}
